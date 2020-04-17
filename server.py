@@ -9,7 +9,7 @@ print("Enter this code in client machine :",host)
 conn,addr=s.accept()
 while True:
     data=conn.recv(1024).decode()
-    if data == "quit" or data =="QUIt" or not data:
+    if data == "quit" or data =="QUIT" or not data:
         print("Quitting")
         conn.close()
         s.close()
