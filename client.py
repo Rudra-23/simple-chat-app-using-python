@@ -12,7 +12,7 @@ while True:
         break
     s.sendall(x.encode())
     data=s.recv(1024).decode()
-    if data =="quit" or not data:
+    if data =="quit" or data =="QUIT" or not data:
         print("Quitting")
         s.close()
         break
